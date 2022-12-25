@@ -8,7 +8,7 @@ function Footer() {
       </div>
       <div className="w-11/12 m-auto flex justify-around">
         <div className="w-7/12 flex justify-around">
-          <div className="flex flex-col tracking-wider text-sm text-greenishtxt">
+          <div className="flex flex-col text-base  tracking-wider text-sm text-greenishtxt">
             <h4 className="text-slate-50 mb-3">Navigation</h4>
             <a className="hover:text-green-300" href="#">
               Home
@@ -26,7 +26,7 @@ function Footer() {
               Get in touch
             </a>
           </div>
-          <div className="flex flex-col tracking-wider text-sm text-greenishtxt">
+          <div className="flex flex-col text-base tracking-wider text-sm text-greenishtxt">
             <h4 className="text-slate-50 mb-3">Statistics</h4>
             <a className="hover:text-green-300" href="#">
               Most active users
@@ -44,7 +44,7 @@ function Footer() {
               Awards
             </a>
           </div>
-          <div className="flex flex-col tracking-wider text-sm text-greenishtxt">
+          <div className="flex flex-col text-base tracking-wider text-sm text-greenishtxt">
             <h4 className="text-slate-50 mb-3">Learn More</h4>
             <a className="hover:text-green-300" href="#">
               About VoguEco
@@ -64,7 +64,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col tracking-wider text-sm text-greenishtxt">
+        <div className="flex flex-col text-base tracking-wider text-sm text-greenishtxt">
           <h4 className="text-slate-50 mb-3">Contact us</h4>
           <p>Medi-Caps University, Pigdamber</p>
           <p>Rau, Indore (M.P), India</p>
@@ -77,16 +77,16 @@ function Footer() {
       </div>
       <div className="w-10/12 m-auto py-10 flex justify-between">
         <div className="w-3/12 flex justify-around">
-          <button className="rounded-lg font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 hover:bg-slate-100">
+          <button className="rounded-lg w-10 font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 bg-slate-100">
             <i class="fa-brands fa-youtube"></i>
           </button>
-          <button className="rounded-lg font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 hover:bg-slate-100">
+          <button className="rounded-lg w-10 font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 bg-slate-100">
             <i class="fa-brands fa-instagram"></i>
           </button>
-          <button className="rounded-lg font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 hover:bg-slate-100">
+          <button className="rounded-lg w-10 font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 bg-slate-100">
             <i class="fa-brands fa-twitter"></i>
           </button>
-          <button className="rounded-lg font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 hover:bg-slate-100">
+          <button className="rounded-lg w-10 text-lg font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 bg-slate-100">
             <i class="fa-brands fa-square-facebook"></i>
           </button>
         </div>

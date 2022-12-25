@@ -5,6 +5,7 @@ import { LockClosedIcon } from '@heroicons/react/20/solid'
 import { Fragment } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
+import bgImg from "../assets/bgimg.png";
 
 const people = [
   {
@@ -87,12 +88,13 @@ function Profile() {
     
 
   return (
-    <>
+    <div className='h-[100vh]' style={{ backgroundImage: `url(${bgImg})` }}>
+      <div className="Profile-page bg-black bg-opacity-20 h-[100vh] ">
       {userDetails ? (
         <>
-          <div className="min-h-min max-w-7xl mx-auto shadow-md flex justify-between text-right py-3 px-3 mt-2  rounded-md">
+          <div className=" min-h-min max-w-7xl mx-auto shadow-md bg-white flex justify-between text-right py-5 px-3   rounded-md">
             <div>
-              <p className="text-xl">{getRandomResearchTitle()} {userDetails.name}</p>
+              <p className="text-xl font-semibold">{getRandomResearchTitle()} {userDetails.name}</p>
             </div>
             <div>
               <button
@@ -105,12 +107,10 @@ function Profile() {
           </div>
         </>
       ) : (
-        <p className="mt-4">
-          Please Login To see Profile{" "}
-          <Link to="/">
-            <span className="bg-blue-300 p-2 cursor-pointer text-white rounded-md">
-              Login
-            </span>
+        <p className="">
+          
+          <Link to="/login">
+           
           </Link>
         </p>
       )}
@@ -126,8 +126,8 @@ function Profile() {
         <div className="md:grid md:grid-cols-3 md:gap-6">
           <div className="md:col-span-1">
             <div className="px-4 sm:px-0">
-              <h3 className="text-lg font-medium leading-6 text-gray-900">Personal Information</h3>
-              <p className="mt-1 text-sm text-gray-600">Use a permanent address where you can receive mail.</p>
+              <h3 className="text-lg font-medium leading-6  text-white">Personal Information</h3>
+              <p className="mt-1 text-sm text-slate-200">Use a permanent address where you can receive mail.</p>
             </div>
           </div>
           <div className="mt-5 md:col-span-2 md:mt-0">
@@ -136,7 +136,7 @@ function Profile() {
                 <div className="bg-white px-4 py-5 sm:p-6">
                   <div className="grid grid-cols-6 gap-6">
                     <div className="col-span-6 sm:col-span-3">
-                      <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
+                      <label htmlFor="first-name" className="block  text-sm font-medium text-gray-700">
                         First name
                       </label>
                       <input
@@ -144,7 +144,7 @@ function Profile() {
                         name="first-name"
                         id="first-name"
                         value = {userDetails?.name}
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 p-4 block w-full rounded-md  border-green-500 shadow-md focus:border-0 focus:ring-green-500 sm:text-sm"
                       />
                     </div>
 
@@ -158,7 +158,7 @@ function Profile() {
                         id="last-name"
                         autoComplete="family-name"
                         
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 p-4 block w-full rounded-md  border-green-500 shadow-md focus:border-0 focus:ring-green-500 sm:text-sm"
                       />
                     </div>
 
@@ -172,7 +172,7 @@ function Profile() {
                         id="email-address"
                         autoComplete="email"
                         value = {userDetails?.email}
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 p-4 block w-full rounded-md  border-green-500 shadow-md focus:border-0 focus:ring-green-500 sm:text-sm"
                       />
                     </div>
 
@@ -184,7 +184,7 @@ function Profile() {
                         id="country"
                         name="country"
                         autoComplete="country-name"
-                        className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 p-4 block w-full rounded-md  border-green-500 shadow-md focus:border-0 focus:ring-green-500 sm:text-sm"
                       >
                         <option>United States</option>
                         <option>Canada</option>
@@ -201,7 +201,7 @@ function Profile() {
                         name="street-address"
                         id="street-address"
                         autoComplete="street-address"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 p-4 block w-full rounded-md  border-green-500 shadow-md focus:border-0 focus:ring-green-500 sm:text-sm"
                       />
                     </div>
 
@@ -214,7 +214,7 @@ function Profile() {
                         name="city"
                         id="city"
                         autoComplete="address-level2"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 p-4 block w-full rounded-md  border-green-500 shadow-md focus:border-0 focus:ring-green-500 sm:text-sm"
                       />
                     </div>
 
@@ -227,7 +227,7 @@ function Profile() {
                         name="region"
                         id="region"
                         autoComplete="address-level1"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 p-4 block w-full rounded-md  border-green-500 shadow-md focus:border-0 focus:ring-green-500 sm:text-sm"
                       />
                     </div>
 
@@ -240,7 +240,7 @@ function Profile() {
                         name="postal-code"
                         id="postal-code"
                         autoComplete="postal-code"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 p-4 block w-full rounded-md  border-green-500 shadow-md focus:border-0 focus:ring-green-500 sm:text-sm"
                       />
                     </div>
                   </div>
@@ -265,7 +265,7 @@ function Profile() {
 <Listbox value={selected} onChange={setSelected}>
       {({ open }) => (
         <>
-          <Listbox.Label className="block text-xl text-center m-12 font-medium text-gray-700">Plant A Tree🌳</Listbox.Label>
+          <Listbox.Label className="block text-3xl text-center mt-12 mb-4 mx-auto font-poppins  text-white">Plant today, breathe tomorrow!</Listbox.Label>
           <div className="relative flex flex-row  justify-center items-center  mt-4">
             <Listbox.Button className=" relative w-1/6  cursor-default rounded-md border border-gray-300 bg-white py-2 pl-3 pr-10 text-left shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm">
               <span className="flex items-center">
@@ -328,7 +328,7 @@ function Profile() {
       )}
     </Listbox>
     <div className='flex flex-row  justify-center m-4'>
-              <Link className='group relative flex flex-row  justify-center items-center w-2/6 items-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2' to={"/success"}
+              <Link className='group relative flex flex-row  justify-center items-center w-2/6 items-center rounded-md border border-transparent bg-green-600 py-2 px-4 text-sm font-medium text-white hover:bg-green-500 transition-all focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2' to={"/success"}
               onClick={() => {
                 let noOfTrees = selected
                 localStorage.setItem('treeCount', selected.name)
@@ -339,13 +339,14 @@ function Profile() {
                 
               >
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-                  <LockClosedIcon className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" />
+                  <LockClosedIcon className="h-5 w-5 text-white-500 group-hover:text-white-400" aria-hidden="true" />
                 </span>
                 Proceed To Payment
               </button>
               </Link>
             </div>
-    </>
+            </div>
+            </div>
   )
 }
 

@@ -10,27 +10,27 @@ function Navbar() {
       <div className="w-5/12">
         <ul className="flex text-lg justify-around mt-2 p-2">
           <li>
-            <a className="hover:font-semibold transition-all" href="#">
+            <a className="hover:text-white transition-all" href="#">
               Home
             </a>
           </li>
           <li>
-            <a className="hover:font-semibold" href="#">
+            <a className="hover:text-white" href="#">
               About Us
             </a>
           </li>
           <li>
-            <a className="hover:font-semibold" href="#">
+            <a className="hover:text-white" href="#">
               Blog
             </a>
           </li>
           <li>
-            <a className="hover:font-semibold" href="#">
+            <a className="hover:text-white" href="#">
               How it works
             </a>
           </li>
           <li>
-            <a className="hover:font-semibold" href="#">
+            <a className="hover:text-white" href="#">
               Get in Touch
             </a>
           </li>
