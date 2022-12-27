@@ -2,7 +2,7 @@ import {Client, Account, Databases} from 'appwrite'
 const client = new Client();
 
 client
-    .setEndpoint('http://143.244.134.240/v1')
+    .setEndpoint('http://appwrite.vogueeco.us/v1')
     .setProject('63aaeaf74d0ae48e48a5');
 
 export const account = new Account(client)
