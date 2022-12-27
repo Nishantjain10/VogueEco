@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
-import alanBtn from '@alan-ai/alan-sdk-web';
-import {account} from '../appwrite/appwriteConfig'
-import {useNavigate} from 'react-router-dom'
-import {v4 as uuidv4} from 'uuid'
+import { useState, useEffect } from "react";
+import alanBtn from "@alan-ai/alan-sdk-web";
+import { account } from "../appwrite/appwriteConfig";
+import { useNavigate } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 import bgImg from "../assets/bgimg.png";
+import "./Signup.css";
 
 function Signup() {
-
   //   const [name, setUpName] = useState('');
   //   const [phone, setPhone] = useState('')
   //   const [address, setAddress] = useState('');
@@ -25,7 +25,7 @@ function Signup() {
   //         if(commandData.command === 'address'){
   //           setAddress(commandData.data)
   //         }
-  //         if (commandData.command === 'submit'){ 
+  //         if (commandData.command === 'submit'){
   //             document.getElementById('submit-button').click()
   //             document.getElementById('submit-button').focus()
   //             console.log('submit-working');
@@ -35,44 +35,42 @@ function Signup() {
   //   });
   // }, []);
 
+  const navigate = useNavigate();
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
 
+  //Signup
+  const signupUser = async (e) => {
+    e.preventDefault();
 
-    const navigate = useNavigate()
-    const [user, setUser] = useState({
-        name: "",
-        email: "",
-        password: ""
-    })
+    const promise = account.create(
+      uuidv4(),
+      user.email,
+      user.password,
+      user.name
+    );
 
-    //Signup 
-    const signupUser = async (e) => {
-        e.preventDefault()
-
-        const promise = account.create(
-            uuidv4(),
-            user.email,
-            user.password,
-            user.name
-        );
-
-        promise.then(
-            function(response){
-                console.log(response);
-                navigate("/login")
-                alert("Account Created SuccessFully"); //success
-            },
-            function(error) {
-                console.log(error); // Failure
-            }
-        )
-
-
-    }
+    promise.then(
+      function (response) {
+        console.log(response);
+        navigate("/login");
+        alert("Account Created SuccessFully"); //success
+      },
+      function (error) {
+        console.log(error); // Failure
+      }
+    );
+  };
 
   return (
-    <div className='h-[100vh]' style={{ backgroundImage: `url(${bgImg})` }}>
+    <div className="h-[100vh]" style={{ backgroundImage: `url(${bgImg})` }}>
       <div className="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
-        <div className="text-center text-2xl font-boldtext-center font-poppins text-white ml-12 font-bold text-3xl">Sign up</div>
+        <div className="text-center text-2xl font-boldtext-center font-poppins text-white ml-12 font-bold text-3xl">
+          Sign up
+        </div>
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-24 w-[500px] px-12 shadow sm:rounded-xl">
             <form className="space-y-6" action="#" method="POST">
@@ -92,10 +90,10 @@ function Signup() {
                     required
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-lg"
                     onChange={(e) => {
-                        setUser({
-                            ...user,
-                            name: e.target.value
-                        })
+                      setUser({
+                        ...user,
+                        name: e.target.value,
+                      });
                     }}
                   />
                 </div>
@@ -114,12 +112,12 @@ function Signup() {
                     type="email"
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-lg"
                     onChange={(e) => {
-                        setUser({
-                            ...user,
-                            email: e.target.value
-                        })
+                      setUser({
+                        ...user,
+                        email: e.target.value,
+                      });
                     }}
-                    />
+                  />
                 </div>
               </div>
 
@@ -139,10 +137,10 @@ function Signup() {
                     required
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-lg"
                     onChange={(e) => {
-                        setUser({
-                            ...user,
-                            password: e.target.value
-                        })
+                      setUser({
+                        ...user,
+                        password: e.target.value,
+                      });
                     }}
                   />
                 </div>
@@ -162,7 +160,7 @@ function Signup() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Signup
+export default Signup;
