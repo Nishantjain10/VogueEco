@@ -1,8 +1,10 @@
 import {Client, Account, Databases} from 'appwrite'
-
 const client = new Client();
 
-client.setEndpoint("http://localhost/v1").setProject("63a6dcf0b03450648cf0")
+client
+    .setEndpoint('http://157.245.101.77/v1')
+    .setProject('63aa9d800c7370ab6efb');
+
 
 export const account = new Account(client)
 

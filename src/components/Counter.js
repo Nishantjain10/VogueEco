@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+
+
 function Counter() {
   const counterArr = ["9", "5", "2", "0", "2", "1"];
   const counterCard = counterArr.map((count) => {
@@ -35,4 +37,5 @@ function Counter() {
     </div>
   );
 }
+
 export default Counter;

@@ -6,19 +6,19 @@ import Solutions from "../components/Solutions";
 import Counter from "../components/Counter";
 import Footer from "../components/Footer";
 
-function Landing() {
-  return (
-    <div className="App font-poppins">
-      <div style={{ backgroundImage: `url(${bgImg})` }}>
-        <Navbar />
-        <Hero />
-        <Issues />
-        <Solutions />
-        <Counter />
-        <Footer />
+  function Landing() {
+    return (
+      <div className="App font-poppins">
+        <div style={{ backgroundImage: `url(${bgImg})` }}>
+          <Navbar />
+          <Hero />
+          <Issues />
+          <Solutions />
+          <Counter />
+          <Footer />
+        </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
 
 export default Landing;
