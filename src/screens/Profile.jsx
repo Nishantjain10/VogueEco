@@ -5,6 +5,8 @@ import { LockClosedIcon } from "@heroicons/react/20/solid";
 import { Fragment } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
+import bgImg from "../assets/bgimg.png";
+import infoImg from "../assets/information.png"
 
 const people = [
   {
@@ -83,23 +85,23 @@ function Profile() {
   };
 
   return (
-    <>
+    <div style={{ backgroundImage: `url(${bgImg})` }}>
       {userDetails ? (
-        <>
-          <div className="min-h-min max-w-7xl mx-auto shadow-md flex justify-between text-right py-3 px-3 mt-2  rounded-md">
+        <div>
+          <div className="min-h-min max-w-7xl mx-auto shadow-lg flex justify-between bg-lime-800 text-right py-3 px-3 rounded-md">
             <div>
-              <p className="text-xl">Hello {userDetails.name}</p>
+              <p className="text-xl text-slate-50">Hello {userDetails.name}</p>
             </div>
             <div>
               <button
-                className="bg-red-400 text-white p-1 rounded-md"
+                className="bg-red-400 px-10 text-white p-1 rounded-md"
                 onClick={handleLogout}
               >
                 Logout
               </button>
             </div>
           </div>
-        </>
+        </div>
       ) : (
         <p className="mt-4">
           Please Login To see Profile{" "}
@@ -121,12 +123,13 @@ function Profile() {
         <div className="md:grid md:grid-cols-3 md:gap-6">
           <div className="md:col-span-1">
             <div className="px-4 sm:px-0">
-              <h3 className="text-lg font-medium leading-6 text-gray-900">
+              <h3 className="text-lg font-medium leading-6 text-slate-200">
                 Personal Information
               </h3>
-              <p className="mt-1 text-sm text-gray-600">
+              <p className="mt-1 text-sm text-gray-200 mb-10">
                 Use a permanent address where you can receive mail.
               </p>
+              <img src={infoImg}></img>
             </div>
           </div>
           <div className="mt-5 md:col-span-2 md:mt-0">
@@ -197,8 +200,8 @@ function Profile() {
                         className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                       >
                         <option>United States</option>
-                        <option>Canada</option>
-                        <option>Mexico</option>
+                        <option>India</option>
+                        <option>United Kingdom</option>
                       </select>
                     </div>
 
@@ -270,7 +273,7 @@ function Profile() {
                 <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
                   <button
                     type="submit"
-                    className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    className="inline-flex justify-center rounded-md border border-transparent bg-lime-800 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   >
                     Save
                   </button>
@@ -284,7 +287,7 @@ function Profile() {
       <Listbox value={selected} onChange={setSelected}>
         {({ open }) => (
           <>
-            <Listbox.Label className="block text-xl text-center m-12 font-medium text-gray-700">
+            <Listbox.Label className="block text-xl text-center m-12 font-medium text-slate-50">
               Plant A Tree🌳
             </Listbox.Label>
             <div className="relative flex flex-row  justify-center items-center  mt-4">
@@ -355,9 +358,9 @@ function Profile() {
           </>
         )}
       </Listbox>
-      <div className="flex flex-row  justify-center m-4">
+      <div className="flex flex-row  justify-center m-4 mb-0">
         <Link
-          className="group relative flex flex-row  justify-center items-center w-2/6 items-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          className="group relative flex flex-row  justify-center items-center w-2/6 rounded-md border border-transparent bg-lime-800 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           to={"/success"}
           onClick={() => {
             let noOfTrees = selected;
@@ -375,7 +378,7 @@ function Profile() {
           </button>
         </Link>
       </div>
-    </>
+    </div>
   );
 }
 

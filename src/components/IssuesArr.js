@@ -7,7 +7,7 @@ export default [
   {
     key: "2",
     img: "https://img.freepik.com/premium-vector/tiny-female-character-measure-huge-green-foot-carbon-footprint-pollution-co2-emission-environmental-impact-concept-dangerous-dioxide-effect-planet-ecosystem-cartoon-people-vector-illustration_87771-11310.jpg?w=2000",
-    desc: "The industry is responsible for up to 10% of total global carbon emissions, but it is to be estimated that it will increase by 50% by 2030. ",
+    desc: "The industry is responsible for up to 10% of total global carbon emissions, but it is estimated to increase by 50% till 2030. ",
   },
   {
     key: "3",
