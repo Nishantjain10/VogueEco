@@ -13,20 +13,20 @@ function Footer() {
             <a className="hover:text-green-300" href="#">
               Home
             </a>
-            <a className="hover:text-green-300" href="#">
-              About us
+            <a className="hover:text-green-300" href="#issues">
+              Issues
             </a>
             <a className="hover:text-green-300" href="#">
               Blog
             </a>
-            <a className="hover:text-green-300" href="#">
+            <a className="hover:text-green-300" href="#solutions">
               How it works
             </a>
-            <a className="hover:text-green-300" href="#">
+            <a className="hover:text-green-300" href="#contact">
               Get in touch
             </a>
           </div>
-          <div className="flex flex-col text-base tracking-wider text-sm text-greenishtxt">
+          <div className="flex flex-col tracking-wider text-sm text-greenishtxt">
             <h4 className="text-slate-50 mb-3">Statistics</h4>
             <a className="hover:text-green-300" href="#">
               Most active users
@@ -44,7 +44,7 @@ function Footer() {
               Awards
             </a>
           </div>
-          <div className="flex flex-col text-base tracking-wider text-sm text-greenishtxt">
+          <div className="flex flex-col tracking-wider text-sm text-greenishtxt">
             <h4 className="text-slate-50 mb-3">Learn More</h4>
             <a className="hover:text-green-300" href="#">
               About VogueEco
@@ -64,7 +64,10 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col tracking-wider text-sm text-greenishtxt">
+        <div
+          id="contact"
+          className="flex flex-col tracking-wider text-sm text-greenishtxt"
+        >
           <h4 className="text-slate-50 mb-3">Contact us</h4>
           <p>Medi-Caps University, Pigdamber</p>
           <p>Rau, Indore (M.P), India</p>
@@ -77,16 +80,16 @@ function Footer() {
       </div>
       <div className="w-10/12 m-auto py-10 flex justify-between">
         <div className="w-3/12 flex justify-around">
-          <button className="rounded-lg w-10 font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 bg-slate-100">
+          <button className="rounded-lg w-10 font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 bg-slate-100 hover:scale-110 transition-all">
             <i class="fa-brands fa-youtube"></i>
           </button>
-          <button className="rounded-lg w-10 font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 bg-slate-100">
+          <button className="rounded-lg w-10 font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 bg-slate-100 hover:scale-110 transition-all">
             <i class="fa-brands fa-instagram"></i>
           </button>
-          <button className="rounded-lg w-10 font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 bg-slate-100">
+          <button className="rounded-lg w-10 font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 bg-slate-100 hover:scale-110 transition-all">
             <i class="fa-brands fa-twitter"></i>
           </button>
-          <button className="rounded-lg w-10 text-lg font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 bg-slate-100">
+          <button className="rounded-lg w-10 text-lg font-alice m-5 tracking-wide rounded-br-none border-[1px] border-slate-200 border-solid p-2 py-1 bg-slate-100 hover:scale-110 transition-all">
             <i class="fa-brands fa-square-facebook"></i>
           </button>
         </div>

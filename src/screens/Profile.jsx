@@ -85,7 +85,7 @@ function Profile() {
   };
 
   return (
-    <div style={{ backgroundImage: `url(${bgImg})` }}>
+    <div className="h-[110vh] flex" style={{ backgroundImage: `url(${bgImg})`}}>
       {userDetails ? (
         <div>
           <div className="min-h-min max-w-7xl mx-auto shadow-lg flex justify-between bg-lime-800 text-right py-3 px-3 rounded-md">
@@ -94,26 +94,14 @@ function Profile() {
             </div>
             <div>
               <button
-                className="bg-red-400 px-10 text-white p-1 rounded-md"
+                className="bg-red-400 px-10 text-white py-2 justify-self-center rounded-md hover:bg-transparent hover:border-[1px] hover:border-slate-50"
                 onClick={handleLogout}
               >
                 Logout
               </button>
             </div>
           </div>
-        </div>
-      ) : (
-        <p className="mt-4">
-          Please Login To see Profile{" "}
-          <Link to="/">
-            <span className="bg-blue-300 p-2 cursor-pointer text-white rounded-md">
-              Login
-            </span>
-          </Link>
-        </p>
-      )}
-
-      <div className="hidden sm:block" aria-hidden="true">
+          <div className="hidden sm:block" aria-hidden="true">
         <div className="py-5">
           <div className="border-t border-gray-200" />
         </div>
@@ -149,7 +137,7 @@ function Profile() {
                         name="first-name"
                         id="first-name"
                         value={userDetails?.name}
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 block w-full rounded-md border-[1px] border-gray-400 p-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
@@ -165,7 +153,7 @@ function Profile() {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 block w-full rounded-md border-[1px] border-gray-400 p-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
@@ -182,7 +170,7 @@ function Profile() {
                         id="email-address"
                         autoComplete="email"
                         value={userDetails?.email}
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 block w-full rounded-md border-gray-400 border-[1px] p-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
@@ -197,7 +185,7 @@ function Profile() {
                         id="country"
                         name="country"
                         autoComplete="country-name"
-                        className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 block w-full rounded-md border-[1px] border-gray-400 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                       >
                         <option>United States</option>
                         <option>India</option>
@@ -217,7 +205,7 @@ function Profile() {
                         name="street-address"
                         id="street-address"
                         autoComplete="street-address"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 block w-full rounded-md border-gray-400 border-[1px] p-[1.5px] shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
@@ -233,7 +221,7 @@ function Profile() {
                         name="city"
                         id="city"
                         autoComplete="address-level2"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 block w-full rounded-md border-gray-400 border-[1px] p-[1.5px] shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
@@ -249,7 +237,7 @@ function Profile() {
                         name="region"
                         id="region"
                         autoComplete="address-level1"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 block w-full rounded-md border-gray-400 border-[1px] p-[1.5px] shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
@@ -265,7 +253,7 @@ function Profile() {
                         name="postal-code"
                         id="postal-code"
                         autoComplete="postal-code"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="mt-1 block w-full rounded-md border-gray-400 border-[1px] p-[1.5px] shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
                   </div>
@@ -287,7 +275,7 @@ function Profile() {
       <Listbox value={selected} onChange={setSelected}>
         {({ open }) => (
           <>
-            <Listbox.Label className="block text-xl text-center m-12 font-medium text-slate-50">
+            <Listbox.Label className="block text-xl text-center my-5 font-medium text-slate-50">
               Plant A Tree🌳
             </Listbox.Label>
             <div className="relative flex flex-row  justify-center items-center  mt-4">
@@ -358,7 +346,7 @@ function Profile() {
           </>
         )}
       </Listbox>
-      <div className="flex flex-row  justify-center m-4 mb-0">
+      <div className="flex flex-row  justify-center my-5">
         <Link
           className="group relative flex flex-row  justify-center items-center w-2/6 rounded-md border border-transparent bg-lime-800 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           to={"/success"}
@@ -378,6 +366,22 @@ function Profile() {
           </button>
         </Link>
       </div>
+        </div>
+      ) : (
+        <div className="w-4/12 m-auto shadow-lg flex flex-col items-center bg-slate-100 py-3 px-3 rounded-lg">
+            <p className="text-2xl text-green-900 font-semibold m-10">
+            Oops.. Please Login to see Profile
+            </p>
+            <img src={infoImg}></img>
+            <Link className="w-8/12 flex" to="/login">
+              <button className="bg-green-700 m-auto my-10 w-full px-10 text-white text-xl py-2 justify-self-center rounded-md hover:bg-transparent hover:border-[1px] hover:border-stone-700 hover:text-lime-800 ">
+                Go to Login Page.
+              </button>
+            </Link>
+        </div>
+      )}
+
+      
     </div>
   );
 }

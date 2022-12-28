@@ -68,7 +68,7 @@ function Signup() {
   return (
     <div className="h-[100vh]" style={{ backgroundImage: `url(${bgImg})` }}>
       <div className="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
-        <div className="text-center text-2xl font-boldtext-center font-poppins text-white ml-12 font-bold text-3xl">
+        <div className="text-center font-boldtext-center font-poppins text-white ml-12 font-bold text-3xl">
           Sign up
         </div>
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 function Counter() {
   const counterArr = ["9", "5", "2", "0", "2", "1"];
   const counterCard = counterArr.map((count) => {
@@ -25,7 +24,7 @@ function Counter() {
         {counterCard}
       </div>
       <div className="w-9/12 m-auto text-lg flex justify-center">
-        <Link className="font-serif" to={"/login"}>
+        <Link className="font-serif" to={"/profile"}>
           <button className="bg-slate-50 font-alice m-5 tracking-wide rounded-md rounded-br-none border-2 border-slate-200 border-solid p-2 px-6 text-stone-800 font-medium hover:bg-transparent hover:text-green-50">
             Plant your first tree.
           </button>

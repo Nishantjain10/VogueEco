@@ -3,7 +3,7 @@ import bgImg from "../assets/bgimg.png";
 
 function Success() {
   return (
-    <div className="h-[100vh]" style={{ backgroundImage: `url(${bgImg})` }}>
+    <div>
       <div className="Success-page bg-black bg-opacity-20 h-[100vh] ">
         <div className="text-6xl pt-24 text-white font-serif text-center mx-24">
           Woah! You've{" "}
@@ -11,14 +11,14 @@ function Success() {
             {" "}
             Successfully Planted {localStorage.getItem("treeCount")}
           </span>{" "}
-          Trees🌳
+          Tree/s🌳
         </div>
-        <div className="text-2xl text-white font-serif font-light text-center mt-10 m-auto w-3/6">
+        <div className="text-2xl text-white font-serif font-light text-center mt-10 m-auto w-4/6">
           Congratulations! on taking this important step towards a more
           sustainable future. Your actions truly make a difference, and we are
           grateful for your support.
         </div>
-        <div className="text-2xl text-white font-serif text-center font-light  m-auto w-3/6">
+        <div className="text-2xl text-white font-serif text-center font-light  m-auto w-4/6">
           We sincerely appreciate your generous donation and are excited to
           create a tailored planting schedule for you.🎉
         </div>
@@ -33,7 +33,7 @@ function Success() {
         </div>
 
         <div className="graph-container mx-auto text-white h-auto flex flex-row items-center justify-center ">
-          <div className="graph">
+          <div className="graph w-9/12">
             <ul className="months">
               <li>Jan</li>
               <li>Feb</li>

@@ -18,7 +18,7 @@ function Issues() {
     return <IssueCard key={issue.key} img={issue.img} desc={issue.desc} />;
   });
   return (
-    <div className="flex w-11/12 m-auto flex-col mb-24">
+    <div id="issues" className="flex w-11/12 m-auto flex-col mb-24">
       <div className="mb-10">
         <h2 className="text-5xl text-white tracking-wide font-alice text-center my-4">
           Lack of sustainability looms large.

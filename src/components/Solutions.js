@@ -27,7 +27,7 @@ function SolutionCard(props) {
           {props.heading}
         </h1>
         <p className="text-green-800 text-base">{props.desc}</p>
-        <Link className="font-serif" to={"/login"}>
+        <Link className="font-serif" to={"/profile"}>
           <button className="w-5/12 my-5 text-lg rounded-lg font-alice tracking-wide transition-all rounded-br-none border-2 bg-greenishtxt shadow-lg text-slate-50 font-medium p-2 hover:bg-greenish hover:font-medium">
             {props.but}
           </button>
@@ -50,7 +50,7 @@ function Solutions() {
     );
   });
   return (
-    <div className="my-[5rem]">
+    <div id="solutions" className="my-[5rem]">
       <h1 className="text-5xl text-green-900 tracking-wide font-alice text-center my-4">
         Some of the solutions.
       </h1>
