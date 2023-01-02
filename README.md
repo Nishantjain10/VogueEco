@@ -1,5 +1,8 @@
-![image](https://user-images.githubusercontent.com/87236576/210201765-56f3ce22-a526-42d2-8675-84f690f853bb.png){ width="800" height="600" style="display: block; margin: 0 auto" }
-
+![image](https://user-images.githubusercontent.com/87236576/210201765-56f3ce22-a526-42d2-8675-84f690f853bb.png#center)
+image[src*='#center'] {
+    display: block;
+    margin: auto;
+}
 
 # VogueEco (Save Planet with your Fashion Sense)
 
