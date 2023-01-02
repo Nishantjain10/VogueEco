@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="![image](https://user-images.githubusercontent.com/87236576/210202146-f71fac18-428f-46f4-a1cb-023756effcea.png)">
+  <img src="https://user-images.githubusercontent.com/87236576/210202146-f71fac18-428f-46f4-a1cb-023756effcea.png">
 </p>
 
 # VogueEco (Save Planet with your Fashion Sense)
