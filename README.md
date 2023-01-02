@@ -1,8 +1,6 @@
-![image](https://user-images.githubusercontent.com/87236576/210201765-56f3ce22-a526-42d2-8675-84f690f853bb.png#center)
-image[src*='#center'] {
-    display: block;
-    margin: auto;
-}
+<p align="center">
+  <img src="![image](https://user-images.githubusercontent.com/87236576/210202146-f71fac18-428f-46f4-a1cb-023756effcea.png)">
+</p>
 
 # VogueEco (Save Planet with your Fashion Sense)
 
