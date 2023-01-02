@@ -46,16 +46,16 @@
 
 # Features and Interfaces
 
-1. Landing Page <a id="Landing-Page"></a>
+### 1. Landing Page <a id="Landing-Page"></a>
   ![image](https://user-images.githubusercontent.com/87236576/210201144-4e9bb052-40b0-4fb6-9ba6-9464d6c53900.png)
 
-2. Registration page <a id="Login"></a>
+### 2. Registration page <a id="Login"></a>
    ![image](https://user-images.githubusercontent.com/87236576/210201059-2f1a24ae-ffdd-4e2f-bd5d-9919bca9dfac.png)
 
-3. Form <a id="Form"></a>
+### 3. Form <a id="Form"></a>
    ![image](https://user-images.githubusercontent.com/87236576/210201255-c6a7e91f-2fa1-4ac1-8fa3-aeea823a3ea9.png)
 
-4. Certificate <a id="Certificate"></a>
+### 4. Certificate <a id="Certificate"></a>
    ![image](https://user-images.githubusercontent.com/87236576/210201298-cda725ac-5c54-42ed-b1e5-454b50661271.png)
   
 <a id="Getting-Started"></a>
