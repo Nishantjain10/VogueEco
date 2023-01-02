@@ -29,7 +29,9 @@ function Issues() {
       </div>
       <div className="flex w-11/12 m-auto">{issuesEl}</div>
       <button className="w-2/12 text-lg m-auto mt-24 mb-10 hover:font-medium rounded-lg transition-all font-alice tracking-wide text-green-100 rounded-br-none border-2 shadow-lg border-green-100 border-solid p-2 px-10 hover:bg-slate-100 hover:text-green-900">
-        Discover More
+        <a href="https://github.com/Nishantjain10/VogueEco#readme">
+          Discover More
+        </a>
       </button>
     </div>
   );

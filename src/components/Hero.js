@@ -19,7 +19,7 @@ function Hero() {
           </button>
         </Link>
         <button className="text-lg font-poppins m-5 tracking-wide hover:font-medium rounded-md border-2 border-slate-200 border-solid p-2 px-10 rounded-br-none hover:scale-105 transition-all hover:text-green-900 hover:bg-slate-50">
-          Learn More.
+          <a href="https://devpost.com/software/vogueeco-enkp1w">Learn More.</a>
         </button>
       </div>
     </div>

@@ -73,7 +73,10 @@ function Footer() {
           <p>Rau, Indore (M.P), India</p>
           <p>hello@vogueeco.org</p>
           <p>+91-6281090281</p>
-          <a className="hover:text-green-300 underline" href="#">
+          <a
+            className="hover:text-green-300 underline"
+            href="https://goo.gl/maps/JhfgUnKbQMiCtCiQ9"
+          >
             Check on Google Maps
           </a>
         </div>

@@ -30,7 +30,7 @@ function Counter() {
           </button>
         </Link>
         <button className="rounded-lg text-green-100 font-alice m-5 tracking-wide rounded-br-none border-2 border-slate-200 border-solid p-2 px-10 hover:bg-slate-100 hover:text-green-900">
-          Learn More.
+          <a href="https://devpost.com/software/vogueeco-enkp1w">Learn More.</a>
         </button>
       </div>
     </div>

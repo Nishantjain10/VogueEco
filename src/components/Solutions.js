@@ -17,6 +17,7 @@ const solArr = [
 ];
 
 function SolutionCard(props) {
+  const linkButton = props.but === "Plantation" ? "/profile" : "/profile2";
   return (
     <div className="flex w-[1000px] m-auto bg-slate-50 rounded-2xl shadow-lg justify-around my-14 hover:scale-105 transition-all">
       <div className="w-5/12 p-5">
@@ -27,7 +28,7 @@ function SolutionCard(props) {
           {props.heading}
         </h1>
         <p className="text-green-800 text-base">{props.desc}</p>
-        <Link className="font-serif" to={"/profile"}>
+        <Link className="font-serif" to={linkButton}>
           <button className="w-5/12 my-5 text-lg rounded-lg font-alice tracking-wide transition-all rounded-br-none border-2 bg-greenishtxt shadow-lg text-slate-50 font-medium p-2 hover:bg-greenish hover:font-medium">
             {props.but}
           </button>

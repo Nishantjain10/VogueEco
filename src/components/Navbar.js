@@ -38,7 +38,7 @@ function Navbar() {
         <img className="w-12 mb-1 mr-2" src={tree}></img>
         <h1 className="text-slate-50 mt-1 font-alice text-3xl">VogueEco</h1>
       </div>
-      <div className="w-5/12">
+      <div className="w-6/12">
         <ul className="flex text-lg justify-around mt-2 p-2">
           <li>
             <a
@@ -53,11 +53,7 @@ function Navbar() {
               Issues
             </a>
           </li>
-          <li>
-            <a className="hover:text-white" href="#">
-              Blog
-            </a>
-          </li>
+
           <li>
             <a className="hover:text-white" href="#solutions">
               How it works
@@ -66,6 +62,14 @@ function Navbar() {
           <li>
             <a className="hover:text-white" href="#contact">
               Get in Touch
+            </a>
+          </li>
+          <li>
+            <a
+              className="hover:text-white"
+              href="https://github.com/Nishantjain10/VogueEco#readme"
+            >
+              Documentation
             </a>
           </li>
         </ul>

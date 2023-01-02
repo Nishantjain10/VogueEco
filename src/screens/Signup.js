@@ -7,34 +7,6 @@ import bgImg from "../assets/bgimg.png";
 import "./Signup.css";
 
 function Signup() {
-  //   const [name, setUpName] = useState('');
-  //   const [phone, setPhone] = useState('')
-  //   const [address, setAddress] = useState('');
-  //   const [submit, setSubmit] = useState(false);
-  //   const ALAN_Key = `96bd99c3882a0fa848348b1c9fd575412e956eca572e1d8b807a3e2338fdd0dc/stage`
-  // useEffect(() => {
-  //   alanBtn({
-  //       key: ALAN_Key,
-  //       onCommand: (commandData) => {
-  //         if(commandData.command === 'name'){
-  //           setUpName(commandData.data)
-  //         }
-  //         if(commandData.command === 'phone'){
-  //           setPhone(commandData.data)
-  //         }
-  //         if(commandData.command === 'address'){
-  //           setAddress(commandData.data)
-  //         }
-  //         if (commandData.command === 'submit'){
-  //             document.getElementById('submit-button').click()
-  //             document.getElementById('submit-button').focus()
-  //             console.log('submit-working');
-  //             console.log(document.getElementById('submit-button'));
-  //         }
-  //       }
-  //   });
-  // }, []);
-
   const navigate = useNavigate();
   const [user, setUser] = useState({
     name: "",
