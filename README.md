@@ -47,7 +47,7 @@
 # Features and Interfaces
 
 ### 1. Landing Page <a id="Landing-Page"></a>
-  ![image](https://user-images.githubusercontent.com/87236576/210201144-4e9bb052-40b0-4fb6-9ba6-9464d6c53900.png)
+  ![image](https://user-images.githubusercontent.com/87236576/210778572-bc3bb8f2-aa85-4978-985b-ab2d81427e08.png)
 
 ### 2. Registration page <a id="Login"></a>
    ![image](https://user-images.githubusercontent.com/87236576/210201059-2f1a24ae-ffdd-4e2f-bd5d-9919bca9dfac.png)
