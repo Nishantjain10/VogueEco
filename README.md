@@ -3,6 +3,7 @@
 </p>
 
 # VogueEco (Save Planet with your Fashion Sense)
+# MAde for Design-a-thon
 
 ## To check deployment, visit this link 👉 [VogueEco](https://www.vogueeco.us/)
 
