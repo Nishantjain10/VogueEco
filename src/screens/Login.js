@@ -24,11 +24,11 @@ function Login() {
   return (
     <div className="h-[100vh]" style={{ backgroundImage: `url(${bgImg})` }}>
       <div className="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
-        <div className="text-center font-poppins text-white ml-12 font-bold text-3xl">
+        <div className="text-center font-poppins text-white md:ml-12 font-bold text-3xl">
           Log in
         </div>
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-          <div className="bg-white py-24 w-[500px] px-12 shadow sm:rounded-xl ">
+          <div className="bg-white py-24 w-11/12 m-auto md:w-[500px] px-12 shadow rounded-xl ">
             <form className="space-y-6" action="#" method="POST">
               <div>
                 <label

@@ -19,17 +19,20 @@ const solArr = [
 function SolutionCard(props) {
   const linkButton = props.but === "Plantation" ? "/profile" : "/profile2";
   return (
-    <div className="flex w-[1000px] m-auto bg-slate-50 rounded-2xl shadow-lg justify-around my-14 hover:scale-105 transition-all">
-      <div className="w-5/12 p-5">
-        <img className="w-full h-96 drop-shadow-xl" src={props.img}></img>
+    <div className="flex flex-col md:flex-row w-5/6 md:w-[1000px] m-auto bg-slate-50 rounded-2xl shadow-lg justify-around my-14 hover:scale-105 transition-all">
+      <div className="md:w-5/12 p-5">
+        <img
+          className="w-full h-80 md:h-96 drop-shadow-xl"
+          src={props.img}
+        ></img>
       </div>
-      <div className="w-6/12 flex flex-col justify-center">
+      <div className="md:w-6/12 p-5 md:p-0 flex flex-col justify-center">
         <h1 className="font-alice text-4xl font-semibold my-5 text-green-900">
           {props.heading}
         </h1>
         <p className="text-green-800 text-base">{props.desc}</p>
         <Link className="font-serif" to={linkButton}>
-          <button className="w-5/12 my-5 text-lg rounded-lg font-alice tracking-wide transition-all rounded-br-none border-2 bg-greenishtxt shadow-lg text-slate-50 font-medium p-2 hover:bg-greenish hover:font-medium">
+          <button className="w-full md:w-5/12 my-5 text-lg rounded-lg font-alice tracking-wide transition-all rounded-br-none border-2 bg-greenishtxt shadow-lg text-slate-50 font-medium p-2 hover:bg-greenish hover:font-medium">
             {props.but}
           </button>
         </Link>
@@ -52,10 +55,10 @@ function Solutions() {
   });
   return (
     <div id="solutions" className="my-[5rem]">
-      <h1 className="text-5xl text-green-900 tracking-wide font-alice text-center my-4">
+      <h1 className="text-5xl w-5/6 md:w-full text-white md:text-green-900 tracking-wide font-alice mx-auto md:text-center my-4">
         Some of the solutions.
       </h1>
-      <p className="text-center text-lg text-green-700">
+      <p className="w-5/6 md:w-full mx-auto md:text-center text-lg text-green-300 md:text-green-700">
         Embracing sustainable practices for a greener future in the textile
         industry
       </p>

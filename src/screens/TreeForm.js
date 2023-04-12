@@ -110,7 +110,7 @@ function Profile() {
             </div>
           </div>
 
-          <div className="mt-10 mx-24 sm:mt-0">
+          <div className="w-5/6 mt-10 md:mx-24 mx-auto sm:mt-0">
             <div className="md:grid md:grid-cols-3 md:gap-6">
               <div className="md:col-span-1">
                 <div className="px-4 sm:px-0">
@@ -125,7 +125,7 @@ function Profile() {
               </div>
               <div className="mt-5 md:col-span-2 md:mt-0">
                 <form action="#" method="POST">
-                  <div className="overflow-hidden shadow sm:rounded-md">
+                  <div className="overflow-hidden shadow rounded-md">
                     <div className="bg-white px-4 py-5 sm:p-6">
                       <div className="grid grid-cols-6 gap-6">
                         <div className="col-span-6 sm:col-span-3">
@@ -260,14 +260,14 @@ function Profile() {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
+                    {/* <div className="bg-gray-50 px-4 py-3 text-right sm:px-6 w-full">
                       <button
                         type="submit"
-                        className="inline-flex justify-center rounded-md border border-transparent bg-lime-800 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                        className="inline-flex w-full md:w-1/6 justify-center rounded-md border border-transparent bg-lime-800 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                       >
                         Save
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 </form>
               </div>
@@ -352,29 +352,28 @@ function Profile() {
               </>
             )}
           </Listbox>
-          <div className="flex flex-row  justify-center my-5">
+          <div className="flex flex-row  justify-center my-5 pb-5">
             <Link
-              className="group relative flex flex-row  justify-center items-center w-2/6 rounded-md border border-transparent bg-lime-800 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+              className="group relative flex flex-row  justify-center items-center w-3/6 md:w-2/6 rounded-md border border-transparent bg-lime-800 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               to={"/success"}
               onClick={() => {
                 let noOfTrees = selected;
                 localStorage.setItem("treeCount", selected.name);
               }}
             >
-              <button type="submit" className="">
-                <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-                  <LockClosedIcon
-                    className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
-                    aria-hidden="true"
-                  />
-                </span>
-                Submit the form.
+              <button type="submit" className="flex justify-between">
+                <LockClosedIcon
+                  className="absolute left-2 h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
+                  aria-hidden="true"
+                />
+                <span>Submit the form.</span>
+                {/* <span className="absolute inset-y-0 left-0 flex items-center pl-3"></span> */}
               </button>
             </Link>
           </div>
         </div>
       ) : (
-        <div className="w-4/12 m-auto shadow-lg flex flex-col items-center bg-slate-100 py-3 px-3 rounded-lg">
+        <div className="w-11/12 md:w-4/12 m-auto shadow-lg flex flex-col items-center bg-slate-100 py-3 px-3 rounded-lg">
           <p className="text-2xl text-green-900 font-semibold m-10">
             Oops.. Please Login to see Profile
           </p>

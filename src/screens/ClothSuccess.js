@@ -5,24 +5,25 @@ function Success() {
   return (
     <div>
       <div className="Success-page bg-black bg-opacity-20 h-[100vh] ">
-        <div className="text-6xl pt-24 text-white font-serif text-center mx-24">
+        <div className="w-5/6 mx-auto text-4xl md:text-6xl pt-24 text-white font-serif md:text-center md:mx-24">
           Woah! You've{" "}
           <span className="text-green-500">
             {" "}
-            Successfully Planted {localStorage.getItem("treeCount")}
+            Successfully Donated {localStorage.getItem("treeCount")}
           </span>{" "}
-          Tree/s🌳
+          Cloth(es) 👔
         </div>
-        <div className="text-2xl text-white font-serif font-light text-center mt-10 m-auto w-4/6">
+        <div className="text-xl md:text-2xl text-white font-serif font-light md:text-center mt-10 m-auto w-5/6 md:w-4/6">
           Congratulations! on taking this important step towards a more
           sustainable future. Your actions truly make a difference, and we are
           grateful for your support.
         </div>
-        <div className="text-2xl text-white font-serif text-center font-light  m-auto w-4/6">
-          We sincerely appreciate your generous donation and are excited to
-          create a tailored planting schedule for you.🎉
+        <div className="text-xl md:text-2xl text-white font-serif md:text-center font-light w-5/6 m-auto md:w-4/6">
+          We sincerely appreciate your generous donation and are excited to tell
+          you that you have joined us in making future better by recycling your
+          old clothes.
         </div>
-        <div className="text-lg text-white font-extralight text-center mt-24 mb-12  m-auto w-[98ch]">
+        <div className="text-lg text-white font-extralight md:text-center mt-24 mb-12  m-auto w-5/6 md:w-[98ch]">
           This graph shows the number of users who used our website for donation
           of clothes and plantation. It is very encouraging to see that there
           are a significant number of people who are actively involved in
