@@ -11,4 +11,4 @@ export const account = new Account(client);
 
 //Database
 
-export const databases = new Databases(client, appwrite_api_key);
+export const databases = new Databases(client, "63aaef5036cc3edd20a3");
